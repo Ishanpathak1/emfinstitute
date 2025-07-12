@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import EventsHero from './EventsHero'
 import EventsFilter from './EventsFilter'
 import EventsList from './EventsList'

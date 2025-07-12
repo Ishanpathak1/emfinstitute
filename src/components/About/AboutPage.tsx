@@ -1,4 +1,4 @@
-import React from 'react'
+
 import AboutHero from './AboutHero'
 import AboutEMFInstitute from './AboutEMFInstitute'
 import OurMission from './OurMission'

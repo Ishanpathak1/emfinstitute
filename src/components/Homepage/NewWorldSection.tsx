@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const NewWorldSection: React.FC = () => {
   return (

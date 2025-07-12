@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 interface EventsFilterProps {
   onFilterChange: (filters: { month: string; location: string }) => void

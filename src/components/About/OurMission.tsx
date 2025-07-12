@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const OurMission: React.FC = () => {
   return (

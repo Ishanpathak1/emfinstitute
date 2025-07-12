@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const AboutEMFInstitutePage: React.FC = () => {
   return (

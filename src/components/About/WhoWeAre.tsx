@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const WhoWeAre: React.FC = () => {
   const partners = [
