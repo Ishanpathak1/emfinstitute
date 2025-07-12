@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #1F2937;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-primary hover:bg-red-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+  
+  .heading-primary {
+    @apply text-hero font-bold text-brand-primary mb-6;
+  }
+  
+  .heading-secondary {
+    @apply text-section font-bold text-brand-primary mb-4;
+  }
+  
+  .text-body {
+    @apply text-base text-brand-secondary leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
