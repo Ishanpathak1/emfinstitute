@@ -1,4 +1,6 @@
 import { useState } from 'react'
+
+// Homepage Sections
 import {
   TopBar,
   Navigation,
@@ -7,10 +9,22 @@ import {
   AboutSection,
   FeaturesSection,
   NewsletterSection,
-  Footer
+  Footer,
 } from './components/Homepage'
+
+// About Pages
+import {
+  AboutEMFInstitutePage,
+  OurMissionPage,
+  TheFirstYearsPage,
+  WhoWeArePage,
+} from './components/About'
+
+// Events Page
 import { EventsPage } from './components/Events'
-import { AboutEMFInstitutePage, OurMissionPage, TheFirstYearsPage, WhoWeArePage } from './components/About'
+
+// Program Page (new!)
+import { ProgramMainPage } from './components/Program'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -66,6 +80,15 @@ function App() {
             <Footer />
           </div>
         )
+      case 'programs':
+        return (
+          <div className="min-h-screen bg-brand-background">
+            <TopBar />
+            <Navigation onNavigate={handleNavigation} />
+            <ProgramMainPage />
+            <Footer />
+          </div>
+        )
       default:
         return (
           <div className="min-h-screen bg-brand-background">
@@ -85,4 +108,4 @@ function App() {
   return renderPage()
 }
 
-export default App 
+export default App
