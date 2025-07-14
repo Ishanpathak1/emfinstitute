@@ -51,9 +51,18 @@
   }
 }
 
-/* Custom slick carousel arrow styles */
+/* EMF Institute accent color slick arrow styles */
 .slick-prev:before, .slick-next:before {
-  color: #000 !important;
+  color: #fff !important;
   font-size: 32px !important;
   opacity: 1 !important;
 }
+.slick-arrow:hover {
+  color: #fff !important;
+}
+@media (max-width: 1304px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
+

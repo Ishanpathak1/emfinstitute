@@ -26,6 +26,8 @@ import { EventsPage } from './components/Events'
 // Program Page (new!)
 import { ProgramMainPage } from './components/Program'
 
+import { ContactMainPage } from './components/Contact'
+
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
 
@@ -89,6 +91,15 @@ function App() {
             <Footer />
           </div>
         )
+        case 'contact':
+          return (
+            <div className="min-h-screen bg-brand-background">
+              <TopBar />
+              <Navigation onNavigate={handleNavigation} />
+              <ContactMainPage />
+              <Footer />
+            </div>
+          )
       default:
         return (
           <div className="min-h-screen bg-brand-background">

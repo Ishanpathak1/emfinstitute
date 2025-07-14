@@ -8,6 +8,10 @@ const data = [
   { title: 'Concert 1', desc: 'Live in NYC' },
   { title: 'Interview', desc: 'Composer Joel Chadabe' },
   { title: 'Archive Drop', desc: 'New 1970s audio release' },
+  { title: 'Workshop', desc: 'Sound Synthesis' },
+  { title: 'Panel', desc: 'Future of Electronic Music' },
+  { title: 'Masterclass', desc: 'Electronic Composition' },
+  { title: 'Showcase', desc: 'Emerging Artists' },
 ]
 
 const CarouselSection = () => {
@@ -18,12 +22,13 @@ const CarouselSection = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: true, 
     responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
   }
 
   return (
-    <div className="py-6">
-      <h2 className="text-2xl text-[#a0403a] font-bold mb-4">🎬 Highlights</h2>
+    <div className="py-8">
+      <h2 className="text-2xl text-[#a0403a] font-bold mb-4"> Highlights</h2>
       <Slider {...settings}>
         {data.map((item, idx) => (
           <div key={idx} className="px-3">
