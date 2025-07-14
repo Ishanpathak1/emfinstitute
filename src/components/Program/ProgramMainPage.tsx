@@ -1,7 +1,6 @@
 import HeroSection from './HeroSection'
 import ProgramCard from './ProgramCard'
 import CarouselSection from './CarouselSection'
-import FloatingCard from './FloatingCard'
 
 const ProgramMainPage = () => {
   return (
