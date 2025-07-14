@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from './HeroSection'
 import ProgramCard from './ProgramCard'
 import CarouselSection from './CarouselSection'
